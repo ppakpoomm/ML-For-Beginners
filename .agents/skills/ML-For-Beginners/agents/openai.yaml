@@ -1,0 +1,6 @@
+interface:
+  display_name: "ML For Beginners"
+  short_description: "Repo-specific patterns and workflows for ML-For-Beginners"
+  default_prompt: "Use the ML-For-Beginners repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
