@@ -1,0 +1,476 @@
+# Instincts generated from https://github.com/ppakpoomm/ML-For-Beginners
+# Generated: 2026-04-12T02:38:42.129Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: ML-For-Beginners-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Commit Length
+
+## Action
+
+Write moderate-length commit messages (~69 characters)
+
+## Evidence
+
+- Average commit message length: 69 chars
+- Based on 43 commits
+
+---
+id: ML-For-Beginners-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: ML-For-Beginners-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: ML-For-Beginners-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: ML-For-Beginners-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: ML-For-Beginners-workflow-dependency-update-quiz-app
+trigger: "when doing dependency update quiz app"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Workflow Dependency Update Quiz App
+
+## Action
+
+Follow the dependency-update-quiz-app workflow:
+1. Update quiz-app/package-lock.json with new dependency version
+2. Commit with message indicating which dependency was bumped
+3. Merge pull request for the dependency update
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: quiz-app/package-lock.json
+
+---
+id: ML-For-Beginners-workflow-translation-sync
+trigger: "when doing translation sync"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Workflow Translation Sync
+
+## Action
+
+Follow the translation-sync workflow:
+1. Update translations/<lang>/.co-op-translator.json
+2. Update translations/<lang>/README.md and lesson files
+3. Update translated_images/<lang>/* if needed
+4. Commit with message indicating translation sync and chunk info
+5. Merge pull request for translation sync
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: translations/*/.co-op-translator.json, translations/*/README.md, translations/*/*/README.md
+
+---
+id: ML-For-Beginners-workflow-documentation-wording-improvement
+trigger: "when doing documentation wording improvement"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Workflow Documentation Wording Improvement
+
+## Action
+
+Follow the documentation-wording-improvement workflow:
+1. Edit relevant README.md file(s) to improve wording or clarity
+2. Commit with message referencing improved wording or clarity
+3. Merge pull request for documentation improvement
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: 1-Introduction/README.md, README.md
+
+---
+id: ML-For-Beginners-workflow-lesson-content-fix
+trigger: "when doing lesson content fix"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Workflow Lesson Content Fix
+
+## Action
+
+Follow the lesson-content-fix workflow:
+1. Edit affected lesson markdown files (e.g., fix terminology, table alignment)
+2. Commit with message referencing the fix
+3. Merge pull request for the fix
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: 2-Regression/3-Linear/README.md, 4-Classification/2-Classifiers-1/README.md
+
+---
+id: ml-for-beginners-instinct-file-naming
+trigger: "When creating a new file in the codebase"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct File Naming
+
+## Action
+
+Name the file using camelCase convention
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+- Consistent file naming in repository
+
+---
+id: ml-for-beginners-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: ml-for-beginners-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: ml-for-beginners-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: ml-for-beginners-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: ml-for-beginners-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: ml-for-beginners-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.testLocation
+
+---
+id: ml-for-beginners-instinct-git-commit-prefix
+trigger: "When writing a commit message for dependency updates or fixes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Git Commit Prefix
+
+## Action
+
+Prefix the commit message with 'chore' for maintenance or 'fix' for bug fixes
+
+## Evidence
+
+- Seen in commits: 'chore(deps-dev): bump ...', 'fix: correct ...'
+
+---
+id: ml-for-beginners-instinct-git-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Git Commit Length
+
+## Action
+
+Keep commit messages concise, around 69 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: ml-for-beginners-instinct-git-commit-detail
+trigger: "When updating dependencies or syncing translations"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Git Commit Detail
+
+## Action
+
+Include specific details in the commit message about what was updated or synced
+
+## Evidence
+
+- Seen in commits: 'chore(deps-dev): bump flatted from 3.3.3 to 3.4.2 in /quiz-app'
+- chore(i18n): sync translations with latest source changes (chunk 1/1, 7 changes)
+
+---
+id: ml-for-beginners-instinct-dependency-update
+trigger: "When a dependency in quiz-app has a new version available"
+confidence: 0.98
+domain: workflow
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Dependency Update
+
+## Action
+
+Update quiz-app/package-lock.json, commit with a message indicating the dependency bumped, and merge a pull request
+
+## Evidence
+
+- Workflow: dependency-update-quiz-app
+- Commits: 'chore(deps-dev): bump ...'
+
+---
+id: ml-for-beginners-instinct-translation-sync
+trigger: "When source content changes or regular translation sync is scheduled"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Translation Sync
+
+## Action
+
+Update translation JSON and markdown files, update translated images if needed, commit with sync info, and merge a pull request
+
+## Evidence
+
+- Workflow: translation-sync
+- Commits: 'chore(i18n): sync translations ...'
+
+---
+id: ml-for-beginners-instinct-doc-wording-improvement
+trigger: "When someone wants to improve clarity or fix minor issues in documentation"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Doc Wording Improvement
+
+## Action
+
+Edit README.md files to improve wording or clarity, commit referencing the improvement, and merge a pull request
+
+## Evidence
+
+- Workflow: documentation-wording-improvement
+- Commit: 'Improve introduction wording for clarity'
+
+---
+id: ml-for-beginners-instinct-lesson-content-fix
+trigger: "When a mistake or inconsistency is found in lesson content"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Lesson Content Fix
+
+## Action
+
+Edit affected lesson markdown files to fix the issue, commit referencing the fix, and merge a pull request
+
+## Evidence
+
+- Workflow: lesson-content-fix
+- Commits: 'fix: correct accuracy row alignment ...', 'fix: correct MSE to RMSE ...'
+
