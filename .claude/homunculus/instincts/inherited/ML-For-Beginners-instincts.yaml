@@ -1,0 +1,387 @@
+# Instincts generated from https://github.com/ppakpoomm/ML-For-Beginners
+# Generated: 2026-05-22T14:39:16.610Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: ML-For-Beginners-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 24 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(i18n): sync translations with latest source changes (chunk 1/1, 15 changes), chore(i18n): sync translations with latest source changes (chunk 1/1, 12 changes)
+
+---
+id: ML-For-Beginners-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Commit Length
+
+## Action
+
+Write moderate-length commit messages (~80 characters)
+
+## Evidence
+
+- Average commit message length: 80 chars
+- Based on 24 commits
+
+---
+id: ML-For-Beginners-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Naming Files
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: PascalCase
+
+---
+id: ML-For-Beginners-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: ML-For-Beginners-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: ML-For-Beginners-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: ML-For-Beginners-workflow-sync-translations-workflow
+trigger: "when doing sync translations workflow"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Workflow Sync Translations Workflow
+
+## Action
+
+Follow the sync-translations-workflow workflow:
+1. Update .co-op-translator.json for each affected language
+2. Update README.md files for each affected lesson in each language
+3. Update solution/notebook.ipynb files for each affected lesson in each language
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: translations/*/.co-op-translator.json, translations/*/1-Introduction/4-techniques-of-ML/README.md, translations/*/2-Regression/3-Linear/README.md
+
+---
+id: ML-For-Beginners-workflow-dependency-bump-quiz-app-workflow
+trigger: "when doing dependency bump quiz app workflow"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/ML-For-Beginners
+---
+
+# ML For Beginners Workflow Dependency Bump Quiz App Workflow
+
+## Action
+
+Follow the dependency-bump-quiz-app-workflow workflow:
+1. Update the dependency version in quiz-app/package-lock.json
+2. Commit and push the updated lockfile
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: quiz-app/package-lock.json
+
+---
+id: ml-for-beginners-instinct-file-naming
+trigger: "When creating a new file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct File Naming
+
+## Action
+
+Name the file using PascalCase (e.g., MyFile.ts)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: ml-for-beginners-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Function Naming
+
+## Action
+
+Name the function using camelCase (e.g., doSomething)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: ml-for-beginners-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase (e.g., MyClass)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: ml-for-beginners-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE (e.g., MAX_SIZE)
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: ml-for-beginners-instinct-relative-imports
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Relative Imports
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: ml-for-beginners-instinct-named-exports
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Named Exports
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: ml-for-beginners-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- architecture.testLocation is 'separate'
+
+---
+id: ml-for-beginners-instinct-git-conventional-commits
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Git Conventional Commits
+
+## Action
+
+Use the conventional commit format: <type>(<scope>): <description>
+
+## Evidence
+
+- Seen in commit 'chore(i18n): sync translations with latest source changes (chunk 1/1, 15 changes)'
+- Pattern in commits.prefixes
+
+---
+id: ml-for-beginners-instinct-git-chore-prefix
+trigger: "When making maintenance, translation sync, or dependency update commits"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Git Chore Prefix
+
+## Action
+
+Use the 'chore' prefix in the commit message
+
+## Evidence
+
+- Seen in commit 'chore(i18n): sync translations with latest source changes (chunk 1/1, 12 changes)'
+- Pattern in commits.prefixes
+
+---
+id: ml-for-beginners-instinct-sync-translations
+trigger: "When source content changes and translations need to be updated to match"
+confidence: 0.98
+domain: workflow
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Sync Translations
+
+## Action
+
+Run the sync-translations workflow: update .co-op-translator.json, README.md, and solution/notebook.ipynb for each affected language
+
+## Evidence
+
+- sync-translations-workflow pattern
+- Seen in commits: 'chore(i18n): sync translations with latest source changes (chunk 1/1, 15 changes)'
+
+---
+id: ml-for-beginners-instinct-bump-quiz-app-dep
+trigger: "When a new version of a dev dependency is released for quiz-app and an update is initiated"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: ppakpoomm/ML-For-Beginners
+---
+
+# Ml For Beginners Instinct Bump Quiz App Dep
+
+## Action
+
+Update quiz-app/package-lock.json and commit the changes
+
+## Evidence
+
+- dependency-bump-quiz-app-workflow pattern
+- Seen in commit 'chore(deps-dev): bump fast-uri from 3.1.0 to 3.1.2 in /quiz-app'
+
